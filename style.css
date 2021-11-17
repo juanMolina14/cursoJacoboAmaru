@@ -77,6 +77,7 @@ footer a {
 footer .redes {
     font-size: 30px;
     display: flex;
+    justify-content: space-around;
 }
 
 footer .redes a {
@@ -163,7 +164,7 @@ p {
 }
 
 .container {
-    width: 1140px;
+    width: 100%;
     margin: 0 auto;
     /*align-items: center;*/
     padding-left: 15px;
@@ -193,6 +194,7 @@ p {
 
 .columna-25 {
     width: 25%;
+    text-align: center;
 }
 
 .columna-33 {
@@ -365,8 +367,11 @@ p {
 /* media query*/
 
 @media(max-width: 767px) {
-    .container {
-        width: 100%;
+    body {
+        font-size: 15px;
+    }
+    header {
+        padding: 15px;
     }
     header .container nav {
         position: fixed;
@@ -392,5 +397,61 @@ p {
         display: block;
         font-size: 40px;
         color: red;
+    }
+    form .boton.boton-negro {
+        width: 100%;
+    }
+    footer {
+        text-align: center;
+    }
+    footer .logo-footer {
+        width: 50%;
+    }
+    footer .redes {
+        justify-content: center;
+    }
+    .container {
+        width: 100%;
+    }
+    .columna-mobile-100 {
+        width: 100%;
+    }
+    .columna-mobile-50 {
+        width: 50%;
+    }
+    .empujar-mobile-0 {
+        margin-left: 0;
+    }
+    .sinpadding-mobile {
+        padding: 0;
+    }
+    #inicio {
+        height: 100vh;
+    }
+    #inicio img {
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+    #inicio .bloque-inicio {
+        text-align: center;
+    }
+    /*#inicio .bloque-inicio h1 {
+        font-size: 25px;
+    }
+    #inicio .bloque-inicio p {
+        font-size: 20px;
+        width: 80%;
+        margin-left: 25px;
+    }*/
+    #servicios .bloque-servicio {
+        margin-bottom: 15px;
+    }
+    #contactenos {
+        padding: 0;
+    }
+    #contactenos iframe {
+        position: relative;
+        height: 50vh;
     }
 }
